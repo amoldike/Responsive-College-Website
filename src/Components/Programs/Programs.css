@@ -5,15 +5,18 @@
   align-items: center;
   justify-content: space-between;
 }
+
 .program {
   flex-basis: 31%;
   position: relative;
 }
+
 .program img {
   width: 100%;
   border-radius: 10px;
   display: block;
 }
+
 .caption {
   border-radius: 10px;
   position: absolute;
@@ -32,11 +35,25 @@
   padding-top: 70%;
   transition: 0.7s;
 }
+
 .caption img {
   width: 60px;
   margin-bottom: 10px;
 }
+
 .program:hover .caption {
   opacity: 1;
   padding-top: 0%;
+}
+
+/* ----------------------Media query------------- */
+
+@media (max-width: 650px) {
+  .programs {
+    flex-direction: column;
+  }
+  .program {
+    flex-basis: 100%;
+    margin: 20px;
+  }
 }
